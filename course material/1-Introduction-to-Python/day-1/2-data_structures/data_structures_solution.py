@@ -1,99 +1,92 @@
 # -*- coding: utf-8 -*-
 """
-###############################################################################
-#																										
-# Do not forget: This Notebook is split into "Code Cells" with the command #%%.							
-# You can run these cells with the keyboard combo: Strg/Ctrl + Enter	 								
-# You can also use #%% to create a new separate cell, if you need it.									
-#
-###############################################################################
+Solutions
 """
 
 ####Tuples####
 
-Texample = 1,2
+
+Texample = 1, 2
 print(Texample)
 #%%
-Texample2 = 
+Texample2 = 1, 2, 3, 4, 5
 print(Texample2)
 #%%
-Texample3 = 
+Texample3 = 1, 2, 3.0, "hey", True
 print(Texample3)
 #%%
-print(Texample[])
+Texample[1]
 #%%
-print(Texample[])
+Texample[0]
 #%%
-print(Texample2[])
+Texample2[4]
 #%%
-print(Texample2. )
+Texample2.index(4)
 #%%
 Texample4 = 1,4,3,4,4,5
-print(Texample4. )
+Texample4.index(4)
 #%%
 Texample5 = 3.0,4.0,12.0
-dVarA, dVarB, dVarC = 
+dVarA, dVarB, dVarC = Texample5
 #%%
 Texample6 = 4.0,8.0,16.0
-Texample6[] = 
+Texample6[1] = 12.0
+
 #%%
 ####Lists####
 
-LNumbers = 
+LNumbers = [1,2,3,4,5]
 print(LNumbers)
 #%%
-LVarious = 
+LVarious = [1, 2, 3.0, "hey", True]
 print(LVarious)
 #%%
-LEmpty = 
+LEmpty = list()
 print(LEmpty)
 #%%
-print(LVarious[] )
+LVarious[1]
 #%%
-print(LVarious. ) 
+LVarious.index(2)
 #%%
 
-print(LVarious[])
+LVarious[1:4]
 #%%
-LVariousPart = LVarious[]
+LVariousPart = LVarious[1:4]
 print(LVariousPart)
 #%%
 LSpotify = ["Charts","Neuheiten","Podcasts & Video Shows", "Entdecken", "Konzerte"]
-
-LSpotify[] = 
 #%%
-LSpotify.
+LSpotify[0] = "Aktuelle Charts"
 #%%
-LSpotify.
-print(LSpotify)
+LSpotify.append("Deine Songs")
 #%%
 LSpotify.pop()
 print(LSpotify)
 #%%
-LSpotify.
+LSpotify.pop(3)
 print(LSpotify)
 #%%
-LSpotify.
-#%%
-LSpotify.
+LSpotify.remove("Neuheiten")
 print(LSpotify)
 #%%
-print ( ...(LSpotify))
-#%%
-print(LSpotify. )
-#%%
-LSpotify.
+LSpotify.insert(1,"Neuheiten")
+LSpotify.insert(3,"Entdecken")
 print(LSpotify)
 #%%
-LSpotify.
+len(LSpotify)
+#%%
+LSpotify.count("Neuheiten")
+#%%
+LSpotify.reverse()
 print(LSpotify)
+#%%
+LSpotify.reverse()
+print(LSpotify)
+
 #%%
 sTestString = "Lists are awesome and so are Strings!"
-#%%
-print(sTestString[3])
-#%%
-print(sTestString[0:5]) # Play a little! Change the first and the second value.
-#%%
+sTestString[3]
+sTestString[0:5]
 len(sTestString)
 #%%
 ####Sets####
@@ -105,38 +98,39 @@ print(SNumbers)
 SVarious = {1, 2, 3.0, "hey"}
 print(SVarious)
 #%%
-SEmpty = 
+SEmpty = set()
 print(SEmpty)
 #%%
-
-print(... SVarious)
+4 in SVarious
 #%%
-print(... SVarious)
+2 in SVarious
 #%%
 LtoSet = [1,2,3,5,2,4,12,523,123,21]
-SfromList = set()
+SfromList = set(LtoSet)
 print(SfromList)
+# {1, 2, 3, 4, 5, 523, 12, 21, 123}
 #%%
-LfromSet = list()
+LfromSet = list(SfromList)
 print(LfromSet)
+
 #%%
 SNumbers = {1,2,3,4,5,1}
 SVarious = {1, 2, 3.0, "hey"}
 
 # unique in SNumbers
-print()
+SNumbers
 #%%
 # in SNumbers, but not in SVarious
-print()
+SNumbers - SVarious
 #%%
 # in SNumbers or in SVarious or both
-print()
+SNumbers | SVarious
 #%%
 # in SNumbers and in SVarious
-print()
+SNumbers & SVarious
 #%%
 # in SNumbers or in SVarious but not in both
-print()
+SNumbers ^ SVarious
 #%%
 ####Dictionaries####
 
@@ -149,68 +143,58 @@ print(DNumbers_nKeys)
 DNumbers_sVals = {1:"One",2:"Two",3:"Three"}
 print(DNumbers_sVals)
 #%%
-print(DNumbers_sVals[])
-print(DNumbers_sVals[])
+print(DNumbers_sVals[3])
+print(DNumbers_sVals[1])
 #%%
-DNumbers_sVals[] = ""
-print(DNumbers_sVals[])
+DNumbers_sVals[3] = "I made this."
+print(DNumbers_sVals[3])
 #%%
-print(DNumbers_sVals. )
+DNumbers_sVals.get(1,'This is the message, if no such key is in the dict.')
 #%%
-print(DNumbers_sVals. )
+DNumbers_sVals.get(11,'This is the message, if no such key is in the dict.')
 #%%
-print(DNumbers_sVals[])
+print(DNumbers_sVals[4])
 #%%
 DSomeDicts = {"DNumbers":DNumbers, "DNumbers_nKeys": DNumbers_nKeys}
 print(DSomeDicts)
 #%%
-print(DSomeDicts[]
-print(DSomeDicts.
+DSomeDicts["DNumbers"]
+DSomeDicts.get("DNumbers")
 #%%
-DSomeDicts[] = 
+DSomeDicts["DNumbers"] = [1,2,3]
 print(DSomeDicts)
 #%%
-DNumbers[] = 
+DNumbers["SomeInt"] = 1337
 print(DNumbers)
 #%%
-DNumbers.
+DNumbers.pop("SomeInt")
 print(DNumbers)
-#%%
 
-###################
+#%%
 #### Exercises ####
-###################
-
-#########################################################################################################
-#																										#
-# Do not forget: Insert #%% to create a new separate cell, which you can run with Strg/Ctrl + Enter		#
-#																										#
-#########################################################################################################
-
-#%%
 
 # Create a variable of type list "LExercise" with the contents: "Anna", "Charles", "Peter", "Santa", "Eric"
-
+LExercise = ["Anna", "Charles", "Peter", "Santa", "Eric"]
 # Get the index of the element named "Santa"
-
+LExercise.index("Santa")
 # Get the element with the index 4
-
+LExercise[4]
 # Get the last element
-
+LExercise[-1]
 # Assign a string Variable with the contents of element with index 3, but only get the first three letters from the element!
-
+SExerciseString = LExercise[3][:3]
 ####
 # Create a variable of type dictionary "DExercise" with the key-value pairs: 4213-"Epic", 532-"Exclusive", 213-"Good", 5321-"Job"
-
+DExercise = { 4213:"Epic", 532:"Exclusive", 213:"Good", 5321:"Job"}
 # print the contents of the dictionary.
-
+print(DExercise)
 # Retrieve the list of keys.
-
+DExercise.keys
 # Retrieve the value for the key 532
-
+DExercise[532]
 ####
 # Create a list variable "LContainer" with the elements: [231,421,324,646],[21423,634,132],[123,765]
-
+LContainer = [[231,421,324,646],[21423,634,132],[123,765]]
 # Create a new variable iExampleMultiplication and assign the value of the multiplication between the 
 # first element of the first list in LContainer and the third element of the second list in LContainer.
-
+iExampleMultiplication = LContainer[0][0]*LContainer[1][2]
