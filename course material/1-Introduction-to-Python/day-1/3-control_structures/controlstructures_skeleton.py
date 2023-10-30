@@ -181,9 +181,9 @@ print(iCount)
 # 2. for loop
 iCount = 0
 
-for n in LNumbers:
-	if n > 30:
-		iCount = iCount + 1
+for  in :
+	if :
+		iCount =
 		
 print(iCount)
     
