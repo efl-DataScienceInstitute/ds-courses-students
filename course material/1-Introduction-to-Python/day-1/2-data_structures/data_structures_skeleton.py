@@ -11,7 +11,7 @@
 
 ####Tuples####
 
-Texample = 
+Texample = 1,2
 print(Texample)
 #%%
 Texample2 = 
