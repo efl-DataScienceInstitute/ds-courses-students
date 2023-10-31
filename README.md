@@ -159,7 +159,30 @@ Falls du mit Docker vertraut bist und die Umgebung lieber in einem Container lau
 docker run -it --rm -p 8888:8888 -p 4040:4040 -v ~:/home/ubuntu/jupyter jupyter/all-spark-notebook
 ```
 
+### Alternative Installation - Tensorflow
+Starte die Anaconda Prompt und erschaffe ein neues virtuelles Environment:
 
+``` bash
+conda create --name tf_2.6.0 tensorflow=2.6.0
+```
+Aktiviere das virtuelle Environment:
+``` bash
+conda activate tf_2.6.0
+```
+
+Installiere die notwendigen Packages:
+``` bash
+conda install keras
+conda install pandas
+conda install scikit-learn
+```
+
+Wenn du eine Fehlermeldung in Spyder erhältst musst du noch eine bestimmte Version von spyder-kernels installieren. Siehe dazu die angefragte Version in der Fehlermeldung.
+Hier als Beispiel die Installation von spyder-kernels Version 2.2.1:
+
+``` bash
+conda install spyder-kernels=2.2.1
+```
 
 ## Umfrage
 
