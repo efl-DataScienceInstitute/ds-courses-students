@@ -185,6 +185,6 @@ conda install spyder-kernels=2.2.1
 ```
 
 ## Evaluation
-Über diesen [Link](https://forms.gle/nMAkTEFxFsnDQW2dA) geht es zur Evaluation für unsere Data Science Kurse.
+Über diesen [Link](https://forms.gle/wXvhQ1cZtf7BAVjW7) geht es zur Evaluation für unsere Data Science Kurse.
 
 
