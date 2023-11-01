@@ -32,7 +32,7 @@ print('// complete ....... execute folder creation')
 # Import the Data
 # --------------
 # Now create a pandas dataframe.
-df = pd.read_csv('../data/vgsales.csv', sep=',')
+df = pd.read_csv('vgsales.csv', sep=',')
 
 # Let's have a first look at our dataset!
 # Let's see what attributes/columns we have.
