@@ -246,13 +246,13 @@ df.iloc[180]
 #%%
 # we get a different record. Why? Due to dropping of na values, the position of
 # record with index 180 is shifted.
-df.iloc[181]
+df.iloc[179]
+#%%
+# We can clean up the index with this function.
+df = df.reset_index(drop=True)
 #%%
 # 16597 would have been the last element. Let's try to get it another way.
 df.iloc[-1]
-#%%
-# Very good. Now, let's clean up the index with this function.
-df = df.reset_index(drop=True)
 #%%
 # Let's to some advanced stuff now!
 # You have learned about basic data structures.

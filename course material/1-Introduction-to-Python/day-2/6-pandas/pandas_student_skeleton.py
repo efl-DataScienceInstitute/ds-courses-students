@@ -244,13 +244,11 @@ df....
 # record with index 180 is shifted. 
 df....
 #%%
-# 16597 would have been the last element. Let's try to get it another way. 
-# Remember how it works for lists!
-df....
-
-#%%
-# Very good. Now, let's clean up the index with this function.
+# We can clean up the index with this function.
 df = df.reset_index(drop=True)
+#%%
+# 16597 would have been the last element. Let's try to get it another way.
+df.iloc[...]
 
 #%%
 # Let's to some advanced stuff now!
