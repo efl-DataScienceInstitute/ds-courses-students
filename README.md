@@ -184,5 +184,7 @@ Hier als Beispiel die Installation von spyder-kernels Version 2.2.1:
 conda install spyder-kernels=2.2.1
 ```
 
-## Umfrage
+## Evaluation
+Über diesen [Link](https://forms.gle/nMAkTEFxFsnDQW2dA) geht es zur Evaluation für unsere Data Science Kurse.
+
 
