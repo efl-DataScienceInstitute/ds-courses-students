@@ -216,8 +216,9 @@ df_slice_1 = df....
 # does it work the same way with loc? Print the result.
 df.... 
 #%%
-# Nope. we learned that loc works with 'named' labels. Since the rows do have
-# numeric labels and include the number 3, the first part should be fine.
+# Nope. we learned that loc works with 'named' labels. Since the rows have
+# numeric labels, we can change the first part according to the number of instances
+# that we want to keep. Be careful, loc includes the last element of the slice. 
 # Let's change the second part to the column label. Print the result.
 
 df.... 
