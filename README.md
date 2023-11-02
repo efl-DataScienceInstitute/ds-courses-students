@@ -187,4 +187,9 @@ conda install spyder-kernels=2.2.1
 ## Evaluation
 Über diesen [Link](https://forms.gle/wXvhQ1cZtf7BAVjW7) geht es zur Evaluation für unsere Data Science Kurse.
 
+# Alternative für Tag 3
+Wie oben erwähnt ist eine Alternative die Nutzung von Cloud Dienst, wie in diesem speziellen Fall Google CoLab. 
+Nach dem Login mit dem eigenen Google Account und dem öffnen eines neuen Notebooks wird eine ensprechende VM instanziieren. 
 
+
+![Verwendung Google CoLab](src/readme/fig_GoogleCoLab.png)
