@@ -189,7 +189,7 @@ conda install spyder-kernels=2.2.1
 
 # Alternative für Tag 3
 Wie oben erwähnt ist eine Alternative die Nutzung von Cloud Dienst, wie in diesem speziellen Fall Google CoLab. 
-Nach dem Login mit dem eigenen Google Account und dem öffnen eines neuen Notebooks wird eine ensprechende VM instanziieren. 
+Nach dem Login mit dem eigenen Google Account und dem öffnen eines neuen Notebooks wird eine ensprechende Container instanziieren. 
 
 
 ![Verwendung Google CoLab](src/readme/fig_GoogleCoLab.png)
