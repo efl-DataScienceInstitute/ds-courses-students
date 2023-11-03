@@ -177,11 +177,30 @@ conda install pandas
 conda install scikit-learn
 ```
 
+Wähle nun in Spyder als Interpreter das neue virtuelle Environment aus.
+Gehe dazu auf Tools > Preferences > Python Interpreter und wähle hier in der Dropdown-Liste den neu erstellten Interpreter.
+Du findest den Pfad mit Hilfe von 
+```
+conda list
+>> C:\Users\myName\anaconda3\envs\tf_2.6.0
+```
+
+Dann wählst du in diesem Pfad die python.exe im Dropdownmenü:
+`C:\Users\cesto\anaconda3\envs\tf_2.6.0\python.exe`
+
+Nun startest die Konsole in Spyder neu.
+
 Wenn du eine Fehlermeldung in Spyder erhältst musst du noch eine bestimmte Version von spyder-kernels installieren. Siehe dazu die angefragte Version in der Fehlermeldung.
-Hier als Beispiel die Installation von spyder-kernels Version 2.2.1:
+Hier als Beispiel die Installation von spyder-kernels Version 2.4.4:
 
 ``` bash
-conda install spyder-kernels=2.2.1
+conda install spyder-kernels=2.4.4
+```
+
+Eventuell ist auch noch ein Downgrade auf numpy 1.23.4 erforderlich:
+
+``` bash
+conda install numpy=1.23.4
 ```
 
 ## Evaluation
