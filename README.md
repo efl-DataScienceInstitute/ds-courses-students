@@ -221,6 +221,6 @@ pip install p2j
 ```
 Convert File to 
 ``` bash
-pip install p2j
+p2j main_script.py
 ```
 
