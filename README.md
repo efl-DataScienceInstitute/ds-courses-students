@@ -188,7 +188,7 @@ conda list
 Dann wählst du in diesem Pfad die python.exe im Dropdownmenü:
 `C:\Users\cesto\anaconda3\envs\tf_2.6.0\python.exe`
 
-Nun startest die Konsole in Spyder neu.
+Nun startest du die Konsole in Spyder neu.
 
 Wenn du eine Fehlermeldung in Spyder erhältst musst du noch eine bestimmte Version von spyder-kernels installieren. Siehe dazu die angefragte Version in der Fehlermeldung.
 Hier als Beispiel die Installation von spyder-kernels Version 2.4.4:
