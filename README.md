@@ -214,7 +214,7 @@ Nach dem Login mit dem eigenen Google Account und dem öffnen eines neuen Notebo
 ![Verwendung Google CoLab](src/readme/fig_GoogleCoLab.png)
 
 
-To convert python to a notebook: Install help package
+To convert python to a notebook on your local machine: Install help package
 
 ``` bash
 pip install p2j
@@ -223,4 +223,17 @@ Convert File to
 ``` bash
 p2j main_script.py
 ```
+
+# Google Colab defualt folder: 
+/content 
+
+Check by your own: 
+``` python
+import os
+os.get_cdw()
+```
+
+Uopload the file into this folder over upload! 
+
+
 
