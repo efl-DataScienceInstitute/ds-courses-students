@@ -90,7 +90,7 @@ plt.figure(figsize=(15, 5))
 sns.heatmap(df_raw.isnull(), cbar=False, yticklabels=False, cmap='Greys')
 plt.xticks(rotation=45, fontsize=6)
 plt.tight_layout()
-plt.savefig(string_log_folder + '/' + 'fif_missing_values.png', dpi=300)
+plt.savefig(string_log_folder + '/' + 'fig_missing_values.png', dpi=300)
 plt.close()
 
 df_raw = pd.read_csv('dataset_small.csv', sep=',')
@@ -180,7 +180,7 @@ print('// complete ........ data int_rate min: ', dMin_int_rate)
 # triangle of the grid, making this a “corner” plot.
 plt.figure()
 sns.pairplot(df[['loan_amnt', 'int_rate', 'installment', 'annual_inc', 'dti']], corner=True)
-plt.savefig(string_log_folder + '/' + 'pair_plot.png', dpi=300)
+plt.savefig(string_log_folder + '/' + 'fig_pair_plot.png', dpi=300)
 plt.close()
 
 #%%  Label Encoding:
@@ -249,7 +249,7 @@ print('// complete ....... figure')
 # You can also save the image as pdf
 plt.figure()
 ax = sns.countplot(x='purpose', data=df)
-plt.savefig(string_log_folder + '/' + 'Purpose.png')
+plt.savefig(string_log_folder + '/' + 'fig_Purpose.png')
 plt.close()
 
 # Upgrade: Without borderlines
@@ -264,7 +264,7 @@ plt.xlabel('Purpose')
 plt.ylabel('Count')
 plt.title('Purpose of Use')
 plt.tight_layout()
-plt.savefig(string_log_folder + '/' + 'PurposeImprove_300.png', dpi=300)
+plt.savefig(string_log_folder + '/' + 'fig_PurposeImprove_300.png', dpi=300)
 plt.close()
 
 # %%
@@ -277,7 +277,7 @@ plt.figure()
 sns.boxplot(x='grade', y='loan_amnt', data=df, showfliers=False, palette='Greys')
 plt.xticks(rotation=45, fontsize=6)
 plt.title('Loan Amount by Class')
-plt.savefig(string_log_folder + '/' + 'GradesLoanAmountImprove.png')
+plt.savefig(string_log_folder + '/' + 'fig_GradesLoanAmountImprove.png')
 plt.close()
 
 
@@ -308,7 +308,7 @@ print(dict_risk)
 plt.figure()
 df.groupby(['grade'])['bad_loan'].mean().sort_values().plot.bar()
 plt.ylabel('Percentage of Bad Debt')
-plt.savefig(string_log_folder + '/' + 'RiskProfile.png')
+plt.savefig(string_log_folder + '/' + 'fig_RiskProfile.png')
 plt.close()
 
 
@@ -321,7 +321,7 @@ plt.close()
 
 plt.figure()
 sns.boxplot(x='grade', y='int_rate', data=df)
-plt.savefig(string_log_folder + '/' + 'GradesIntRate.png')
+plt.savefig(string_log_folder + '/' + 'fig_GradesIntRate.png')
 # plt.show()
 plt.close()
 
@@ -332,7 +332,7 @@ sns.boxplot(x='grade', y='int_rate', data=df,
              order=['A', 'B', 'C', 'D', 'E', 'F', 'G'])
 plt.xticks(rotation=45, fontsize=6)
 plt.title('Interest Rat and Grade in Order')
-plt.savefig(string_log_folder + '/' + 'GradesIntRateOrder.png')
+plt.savefig(string_log_folder + '/' + 'fig_GradesIntRateOrder.png')
 # plt.show()
 plt.close()
 print('// complete ....... data exploring part I')
@@ -369,7 +369,7 @@ sns.heatmap(corr,
         xticklabels=corr.columns,
         yticklabels=corr.columns, annot=True)
 plt.tight_layout()
-plt.savefig(string_log_folder + '/' + 'CoreHeatmap.pdf')
+plt.savefig(string_log_folder + '/' + 'fig_CoreHeatmap.pdf')
 # plt.show()
 plt.close()
 
@@ -388,7 +388,7 @@ sns.heatmap(corr,
         xticklabels=corr.columns,
         yticklabels=corr.columns, annot=True, mask=mask)
 plt.tight_layout()
-plt.savefig(string_log_folder + '/' + 'CoreHeatmapUpdate.pdf')
+plt.savefig(string_log_folder + '/' + 'fig_CoreHeatmapUpdate.pdf')
 plt.close()
 print('// complete ....... data exploring part II')
 
