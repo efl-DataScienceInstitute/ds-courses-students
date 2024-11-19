@@ -19,7 +19,7 @@ Im Anschluss findest du eine detaillierte Installationsanleitungen zum Einrichte
 # Installationsanleitungen
 Nachdem der Umgang mit dem Repository klar sein sollte, fokussieren wir uns auf die Installation der notwendigen integrierte Entwicklungsumgebung (IDE). Dabei liegt der Fokus auf: 
 
-- Eine funktionierende **Python 3.7–3.12** Installation
+- Eine funktionierende **Python 3.9–3.12** Installation
 
 - Eine Installation der Entwicklungsumgebung Spyder, sowie der dazugehörenden Paketmanagement-Software Anaconda
 
