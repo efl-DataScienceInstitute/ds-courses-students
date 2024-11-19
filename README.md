@@ -1,11 +1,3 @@
-# Update Quiz: 
-Für die Kurse befindet sich jeweils ein "Quiz" im "quizzes" folder. 
-Du findest ebenfalls eine Beschreibung der Aufgaben als .md und .docx file in jedem dieser Unterordner. 
-Falls trotzdem etwas unklar sein sollte, scheue dich bitte nicht einfach nachzufragen. 
-Wir wünschen viel Spaß beim Lösen. 
-
-Sende deine Lösungen bis zum 31. Dezember 2023 23:59 Uhr an dscourses@eflab.de mit dem Betreﬀ „Lösungen zum Data-Science-Quiz“. Das Abschicken deiner Lösung ist Voraussetzung für den Erhalt eines Zertifikats für die Teilnahme am oben genannten Kurs.
-
 # EFL- Data Science Kurs
 
 Hallo lieber Kursteilnehmer!,
@@ -27,7 +19,7 @@ Im Anschluss findest du eine detaillierte Installationsanleitungen zum Einrichte
 # Installationsanleitungen
 Nachdem der Umgang mit dem Repository klar sein sollte, fokussieren wir uns auf die Installation der notwendigen integrierte Entwicklungsumgebung (IDE). Dabei liegt der Fokus auf: 
 
-- Eine funktionierende **Python 3.7–3.10** Installation
+- Eine funktionierende **Python 3.9–3.12** Installation
 
 - Eine Installation der Entwicklungsumgebung Spyder, sowie der dazugehörenden Paketmanagement-Software Anaconda
 
