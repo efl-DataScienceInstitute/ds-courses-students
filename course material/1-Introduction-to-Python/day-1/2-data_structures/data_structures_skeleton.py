@@ -11,117 +11,117 @@
 
 ####Tuples####
 
-Texample = 
-print(Texample)
+t_example = 
+print(t_example)
 #%%
-Texample2 = 
-print(Texample2)
+t_example2 = 
+print(t_example2)
 #%%
-Texample3 = 
-print(Texample3)
+t_example3 = 
+print(t_example3)
 #%%
-print(Texample[])
+print(t_example[])
 #%%
-print(Texample[])
+print(t_example[])
 #%%
-print(Texample2[])
+print(t_example2[])
 #%%
-print(Texample2. )
+print(t_example2. )
 #%%
-Texample4 = 1,4,3,4,4,5
-print(Texample4. )
+t_example4 = 1,4,3,4,4,5
+print(t_example4. )
 #%%
-Texample5 = 3.0,4.0,12.0
+t_example5 = 3.0,4.0,12.0
 dVarA, dVarB, dVarC = 
 #%%
-Texample6 = 4.0,8.0,16.0
-Texample6[] = 
+t_example6 = 4.0,8.0,16.0
+t_example6[] = 
 #%%
 ####Lists####
 
-LNumbers = 
-print(LNumbers)
+l_numbers = 
+print(l_numbers)
 #%%
-LVarious = 
-print(LVarious)
+l_various = 
+print(l_various)
 #%%
-LEmpty = 
-print(LEmpty)
+l_empty = 
+print(l_empty)
 #%%
-print(LVarious[] )
+print(l_various[] )
 #%%
-print(LVarious. ) 
+print(l_various. ) 
 #%%
 
-print(LVarious[])
+print(l_various[])
 #%%
-LVariousPart = LVarious[]
-print(LVariousPart)
+l_various_part = l_various[]
+print(l_various_part)
 #%%
-LSpotify = ["Charts","Neuheiten","Podcasts & Video Shows", "Entdecken", "Konzerte"]
+l_spotify = ["Charts","Neuheiten","Podcasts & Video Shows", "Entdecken", "Konzerte"]
 
-LSpotify[] = 
+l_spotify[] = 
+#%%
+l_spotify.
+#%%
+l_spotify.
+print(l_spotify)
+#%%
+l_spotify.pop()
+print(l_spotify)
+#%%
+l_spotify.
+print(l_spotify)
+#%%
+l_spotify.
+#%%
+l_spotify.
+print(l_spotify)
+#%%
+print ( ...(l_spotify))
+#%%
+print(l_spotify. )
 #%%
 LSpotify.
+print(l_spotify)
 #%%
-LSpotify.
-print(LSpotify)
+l_spotify.
+print(l_spotify)
 #%%
-LSpotify.pop()
-print(LSpotify)
+s_test_string = "Lists are awesome and so are Strings!"
 #%%
-LSpotify.
-print(LSpotify)
+print(s_test_string[3])
 #%%
-LSpotify.
+print(s_test_string[0:5]) # Play a little! Change the first and the second value.
 #%%
-LSpotify.
-print(LSpotify)
-#%%
-print ( ...(LSpotify))
-#%%
-print(LSpotify. )
-#%%
-LSpotify.
-print(LSpotify)
-#%%
-LSpotify.
-print(LSpotify)
-#%%
-sTestString = "Lists are awesome and so are Strings!"
-#%%
-print(sTestString[3])
-#%%
-print(sTestString[0:5]) # Play a little! Change the first and the second value.
-#%%
-len(sTestString)
+len(s_test_string)
 #%%
 ####Sets####
 
 
-SNumbers = {1,2,3,4,5,1}
-print(SNumbers)
+s_numbers = {1,2,3,4,5,1}
+print(s_numbers)
 #%%
-SVarious = {1, 2, 3.0, "hey"}
-print(SVarious)
+s_various = {1, 2, 3.0, "hey"}
+print(s_various)
 #%%
-SEmpty = 
-print(SEmpty)
+s_empty = 
+print(s_empty)
 #%%
 
-print(... SVarious)
+print(... s_various)
 #%%
-print(... SVarious)
+print(... s_various)
 #%%
-LtoSet = [1,2,3,5,2,4,12,523,123,21]
-SfromList = set()
-print(SfromList)
+l_to_set = [1,2,3,5,2,4,12,523,123,21]
+s_from_list = set()
+print(s_from_list)
 #%%
-LfromSet = list()
-print(LfromSet)
+l_from_set = list()
+print(l_from_set)
 #%%
-SNumbers = {1,2,3,4,5,1}
-SVarious = {1, 2, 3.0, "hey"}
+s_numbers = {1,2,3,4,5,1}
+s_various = {1, 2, 3.0, "hey"}
 
 # unique in SNumbers
 print()
@@ -140,41 +140,41 @@ print()
 #%%
 ####Dictionaries####
 
-DNumbers = {"One":1,"Two":2,"Three":3}
-print(DNumbers)
+d_numbers = {"One":1,"Two":2,"Three":3}
+print(d_numbers)
 #%%
-DNumbers_nKeys = {1:1,2:2,3:3}
-print(DNumbers_nKeys)
+d_numbers_nkeys = {1:1,2:2,3:3}
+print(d_numbers_nkeys)
 #%%
-DNumbers_sVals = {1:"One",2:"Two",3:"Three"}
-print(DNumbers_sVals)
+d_numbers_svals = {1:"One",2:"Two",3:"Three"}
+print(d_numbers_svals)
 #%%
-print(DNumbers_sVals[])
-print(DNumbers_sVals[])
+print(d_numbers_svals[])
+print(d_numbers_svals[])
 #%%
-DNumbers_sVals[] = ""
-print(DNumbers_sVals[])
+d_numbers_svals[] = ""
+print(d_numbers_svals[])
 #%%
-print(DNumbers_sVals. )
+print(d_numbers_svals. )
 #%%
-print(DNumbers_sVals. )
+print(d_numbers_svals. )
 #%%
-print(DNumbers_sVals[])
+print(d_numbers_svals[])
 #%%
-DSomeDicts = {"DNumbers":DNumbers, "DNumbers_nKeys": DNumbers_nKeys}
-print(DSomeDicts)
+d_some_dicts = {"d_numbers":d_numbers, "d_numbers_nkeys": d_numbers_nkeys}
+print(d_some_dicts)
 #%%
-print(DSomeDicts[]
-print(DSomeDicts.
+print(d_some_dicts[]
+print(d_some_dicts.
 #%%
-DSomeDicts[] = 
-print(DSomeDicts)
+d_some_dicts[] = 
+print(d_some_dicts)
 #%%
-DNumbers[] = 
-print(DNumbers)
+d_numbers[] = 
+print(d_numbers)
 #%%
-DNumbers.
-print(DNumbers)
+d_numbers.
+print(d_numbers)
 #%%
 
 ###################
