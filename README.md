@@ -104,20 +104,6 @@ Hier wählst du bitte „Environments“ aus. Du befindest dich standardmäßig 
 ![Anaconda Paketauswahl](src/readme/fig_package_selection.png)
 
 Als nächstes selektierst du im rechten Bereich die **„not installed“** packages. Hier werden alle Pakete aufgelistet, welche du noch nicht installiert hast und noch installieren kannst.
-Jetzt sollst du folgende Pakete installieren:
-
-![Anaconda Pakete Kreas](src/readme/package_kreas_and_co.png)
-
-Hierzu gibst du den Suchbegriff in die Suchleiste ein und wählst die Pakete über die Checkboxen aus.
-
-![Anaconda Paket Installieren](src/readme/fig_anaconda_apply.png)
-
-Abschließend klickst du auf apply. Dann sollten die Packages installiert werden. Wer sich dazu nochmal ein Video ansehen will, findet es hier auf 
-[YouTube - Anaconda Paketinstallation](src/readme/https://www.youtube.com/watch?v=V9cDjjRXS08)
-
-ACHTUNG: Wer eine 32-bit Windows 10 Version haben sollte, bei dem wird TensorFlow nicht installiert werden können! Hierzu bieten wir die PCs in unserem PC-Pool als Ausweichmöglichkeit an.
-
-Super! Deine Entwicklungsumgebung sollte jetzt bereit für den Kurs sein.
 
 
 ## Weitere Vorbereitungsmöglichkeiten
@@ -137,11 +123,6 @@ Folgende Webseiten kannst du dir schon einmal als Desktop-Verknüpfung/Favoriten
 
 ## Trouble Shooting
 
-### Apple M Prozessoren und Tensorflow
-Mit der Umstellung von Intel auf die System-on-a-Chip (SoC) Architektur hat Apple eine neue Generation an Prozessoren eingeführt. Diese auf der ARM-Architektur basierte Entwicklung wird auch als Apple Silicon bezeichnet und bei den modernen MacBook, MacBook Air und MacBook Pro Modellen als M1 bzw. M2 Prozessen beworben. Allerdings kam es bei der ersten Generation dieser Prozessoren zu Inkompatibilitäten mit tensorflow. Daher prüfe bitte, ob dein System ähnliche Probleme aufweist. Falls dies der Fall ist, findest du hier eine offizielle Lösung von Apple: 
-[Get started with tensorflow-metal](https://developer.apple.com/metal/tensorflow-plugin/)
-
-
 ### Manuelle Installation von Paketen beim Mac
 Sollte es generelle Probleme geben Pakete zu installieren, dann kannst du auch eine direkt Installation über das Terminal forcieren. Ein Beispiel zeigen die Codezeilen für das Paket Plotly:
 
@@ -158,49 +139,6 @@ Falls du mit Docker vertraut bist und die Umgebung lieber in einem Container lau
 docker run -it --rm -p 8888:8888 -p 4040:4040 -v ~:/home/ubuntu/jupyter jupyter/all-spark-notebook
 ```
 
-### Alternative Installation - Tensorflow
-Starte die Anaconda Prompt und erschaffe ein neues virtuelles Environment:
-
-``` bash
-conda create --name tf_2.6.0 tensorflow=2.6.0
-```
-Aktiviere das virtuelle Environment:
-``` bash
-conda activate tf_2.6.0
-```
-
-Installiere die notwendigen Packages:
-``` bash
-conda install keras
-conda install pandas
-conda install scikit-learn
-```
-
-Wähle nun in Spyder als Interpreter das neue virtuelle Environment aus.
-Gehe dazu auf Tools > Preferences > Python Interpreter und wähle hier in der Dropdown-Liste den neu erstellten Interpreter.
-Du findest den Pfad mit Hilfe von 
-```
-conda list
->> C:\Users\myName\anaconda3\envs\tf_2.6.0
-```
-
-Dann wählst du in diesem Pfad die python.exe im Dropdownmenü:
-`C:\Users\cesto\anaconda3\envs\tf_2.6.0\python.exe`
-
-Nun startest du die Konsole in Spyder neu.
-
-Wenn du eine Fehlermeldung in Spyder erhältst musst du noch eine bestimmte Version von spyder-kernels installieren. Siehe dazu die angefragte Version in der Fehlermeldung.
-Hier als Beispiel die Installation von spyder-kernels Version 2.4.4:
-
-``` bash
-conda install spyder-kernels=2.4.4
-```
-
-Eventuell ist auch noch ein Downgrade auf numpy 1.23.4 erforderlich:
-
-``` bash
-conda install numpy=1.23.4
-```
 
 ## Evaluation
 Über diesen [Link](https://forms.gle/wXvhQ1cZtf7BAVjW7) geht es zur Evaluation für unsere Data Science Kurse.
