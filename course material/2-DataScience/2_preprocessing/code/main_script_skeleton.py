@@ -4,11 +4,10 @@
 # Main script
 # @author: Dr. Benjamin M. Henrich
 # @since: 2024-12-13
-# @update: 2024-12-17
-# @version: 1.0.0
+# @update: 2024-12-19
+# @version: 1.1.0
 # @workload 120 min
-# View for yesterday means  (e.g., 2024-10-27)
-# Today’s date: 2024-10-28
+# View for yesterday means (e.g., 2024-10-27)
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -16,11 +15,10 @@ import seaborn as sns
 import os
 import datetime
 import time
-
 start_time = time.time()
-now = datetime.datetime.now()
 
-# %% Folder Management
+# %%
+# Folder Management
 # Create an output folder for artifacts using today's date
 now = datetime.datetime.now()
 date_time = now.strftime('%Y-%m-%d')
@@ -30,7 +28,8 @@ if not os.path.exists(string_artifacts_folder):
     os.makedirs(string_artifacts_folder)
 print('// Folder creation complete: ', string_artifacts_folder)
 
-# %% Logging Setup
+# %%
+# Logging Setup
 import logging
 logging.basicConfig(
     filename=string_artifacts_folder + '/' + 'log.log',
@@ -43,8 +42,9 @@ logging.basicConfig(
 logging.getLogger().setLevel(logging.INFO)
 logging.info('// Starting main script execution...')
 
+# %%
 # --------------
-# %% Data Loading
+# Data Loading
 # --------------
 # Load raw data from CSV files
 df_games = pd.read_csv('../data/raw_games.csv', sep=';', encoding='utf-8', low_memory=False)
@@ -56,8 +56,9 @@ df_games_price = pd.read_csv('../data/raw_games_price.csv', sep=';', encoding='u
 logging.info('// Data successfully loaded...')
 print('// Data successfully loaded...')
 
+# %%
 # --------------
-# %% Data Pre-Processing
+# Data Pre-Processing
 # --------------
 # Merge dataframes into a single dataframe on 'app_id'
 df = df_games.merge(df_steam_spy, how='left', on='app_id')
@@ -76,7 +77,8 @@ df['release_date'] = pd.to_datetime(df['release_date'], format='%Y-%m-%d', error
 # Extract data for the game 'Satisfactory' for testing purposes
 df_Satisfactory = df[df['name'] == 'Satisfactory']
 
-# %% Ownership Estimation
+# %%
+# Ownership Estimation
 # Define a function to estimate ownership (conservative approach)
 # This function parses the ownership range string and extracts the lower bound.
 # Handles invalid inputs using try-except for safety.
@@ -100,12 +102,9 @@ df['owners_conservative'] = df['owners_range'].apply(get_lower_bound_ownership)
 # Replace all occurrences of '\\N' with NaN
 df = df.replace({'\\N': None})
 
-# %% Convert Prices
-# Identify and list unique price values
-list_price = df['price'].unique()
-
+# %%
 # --------------
-# %% Data Exploration
+# Data Exploration
 # --------------
 # Count distinct games based on 'app_id'
 print('Number of unique games (App IDs): ', df['app_id'].nunique())
@@ -114,16 +113,8 @@ print('Number of unique games (App IDs): ', df['app_id'].nunique())
 print('Earliest game release date: ', df['release_date'].min())
 print('Latest game release date: ', df['release_date'].max())
 
+# %%
 # --------------
-# %% Research Questions
+# Research Questions
 # --------------
 # You can write your code here!
-
-# --------------
-# %% Data Modeling
-# --------------
-# ToDo ...
-
-# --------------
-logging.info('// complete ....... script')
-print('// complete ....... script')
