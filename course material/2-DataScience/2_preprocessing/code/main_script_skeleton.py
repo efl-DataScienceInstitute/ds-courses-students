@@ -5,10 +5,14 @@
 # @author: Dr. Benjamin M. Henrich
 # @since: 2024-12-13
 # @update: 2024-12-19
-# @version: 1.1.0
+# @version: 1.2.0
 # @workload 120 min
 # View for yesterday means (e.g., 2024-10-27)
 
+# %%
+# -------
+# Part I: Skeleton
+# -------
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -23,6 +27,7 @@ start_time = time.time()
 now = datetime.datetime.now()
 date_time = now.strftime('%Y-%m-%d')
 
+# Our storage folder for the artifacts.
 string_artifacts_folder = '../artifacts/' + 'artifacts' + '_' + date_time
 if not os.path.exists(string_artifacts_folder):
     os.makedirs(string_artifacts_folder)
@@ -118,3 +123,8 @@ print('Latest game release date: ', df['release_date'].max())
 # Research Questions
 # --------------
 # You can write your code here!
+
+# %%
+# -------
+# Part II: Solution
+# -------
