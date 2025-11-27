@@ -18,8 +18,6 @@ if iNumber < 10:
     print('Number is less than 10')
 
 
-
-
 # %%
 #11
 iNumber = 15
@@ -28,16 +26,15 @@ if iNumber < 10:
 else:
     print('Number is greater or equal to 10')
 
-
+#%%
+#12
 age = 19
-if not age < 18:
+if age < 18:
     print('Person is younger than 18')
 elif age == 18:
     print('Person is 18')
-elif age == 19:
-    print('Person is 19')
 else:
-    print('Person is older than 19')
+    print('Person is older than 18')
 
 
 
@@ -54,9 +51,6 @@ if iNumber > 3 and iNumber < 10:
     print('Number is larger than 3 and smaller than 10')
 
 
-
-
-
 # %%
 #14
 LNumbers = [1,2,3,4,5,6,7,8,9,10]
@@ -64,11 +58,6 @@ iNum = LNumbers[2]
 
 if iNum % 2 == 0:
     print(iNum)
-
-
-
-
-
 
 
 # %%
@@ -100,7 +89,7 @@ else:
 	print('Grade 5')
 
 
-
+#%%
 #16
 #Exercise 2
 
@@ -116,19 +105,12 @@ iHour = 12
 (iHour < 9) or (iHour > 18) 
 
 
-
-
 # %%
 #20
 count = 0
 while (count < 3):
     count = count + 1
     print("Hello!") 
-
-
-
-
-
 
 
 # %%
@@ -139,13 +121,10 @@ for iNum in LNumbers:
     print(iNum)
     
 
-
-
 # %%
 #22
 for i in list(range(1, 10, 2)):
     print(i)
-    
  
 # Iterating by index of sequences
 LWords = ['Iterating', 'by', 'index', 'of', 'sequences']
@@ -154,11 +133,8 @@ for i in range(len(LWords)):
     print(LWords[i])
     
 	
-	
 for element in LWords:
     print(element)
-
-
 
 
 # %%
@@ -169,19 +145,16 @@ for letter in 'science':
     print('Current Letter:', letter)
 
 
-
 for letter in 'science':  
     if letter == 'e' or letter == 'c': 
          break
     print('Current Letter:', letter)
 
 
-
 for letter in 'science': 
     pass
 print('Last Letter :', letter)
     
-
 
 # %%
 #25
@@ -193,18 +166,13 @@ for iNum in LNumbers:
     # Check remainder of iNum
     if iNum % 2 == 0:
         # Print iNum if even
-        print(iNum)
-    
-    
+        print(iNum)  
       
     
 # %%
 #26
     
-#Exercise 3 
-    
-    
-    
+#Exercise 3  
 LNumbers = [5,23,37,49,50,46,30,46,70]
 
 # 1. while loop
@@ -227,6 +195,3 @@ for n in LNumbers:
 		iCount = iCount + 1
 		
 print(iCount)
-    
-    
-    

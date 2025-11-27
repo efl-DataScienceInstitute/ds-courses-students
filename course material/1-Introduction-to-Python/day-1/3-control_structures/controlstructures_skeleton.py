@@ -27,6 +27,17 @@ else:
     print('Number is greater or equal to 10')
 
 
+#%%
+#12
+age = 19
+if :
+    print('Person is younger than 18')
+elif :
+    print('Person is 18')
+else:
+    print('Person is older than 18')
+
+
 # %%
 #13
 iNumber = 5
@@ -78,7 +89,7 @@ else:
 	print('Grade 5')
 
 
-
+#%%
 #16
 #Exercise 2
 
@@ -110,8 +121,6 @@ for  in :
     print(iNum)
 
     
-# Idee : ord() über string iterieren
-
 # %%
 #22
 for  in range(, , ):
