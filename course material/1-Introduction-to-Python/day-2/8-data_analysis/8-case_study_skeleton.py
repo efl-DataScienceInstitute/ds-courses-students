@@ -50,13 +50,13 @@ df.
 #group data by genre
 dfGenre = 
 
-#get keys of groups
+#get keys of the unique groups (tip: use the groups attribute)
 dfGenre.
 
-#return indexes of the observations for a specific group
+#return indexes of the observations for a specific group (e.g. 'Action')
 dfGenre.
 
-#return DataFrame of all observations within a specific key
+#return DataFrame of all observations within a specific key/group
 dfGenreAction = 
 
 #perform some aggregate functions on the groups
@@ -131,7 +131,7 @@ LIndexesOfReleases =
 
 # %% data analysis 4) Publisher wise analysis
 
-# Who are the most succesfull publishers?
+# Who are the most successful publishers?
 
 #top 10 publishers by video game releases
 LdfPubReleases =  df.groupby('')[''].count().reset_index()
