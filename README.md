@@ -1,5 +1,15 @@
 # EFL- Data Science Kurs
 
+## Evaluation Data Science Kurse 2025
+
+Wir würden Euch bittem euch 5-10 Minuten Zeit zu nehmen und die Kurse an denen Ihr teilgenommen habt (Python-Kurs und/oder Data Science Kurs) zu evaluieren. Dies hilft uns unsere Art und Weise zu unterrichten kritisch zu hinterfragen und trägt außerdem zur Fortführung der Kurse bei.
+
+Die Evaluation findet Ihr hier:
+[Evaluation](https://forms.gle/ue4scviheyCxP7188)
+
+
+# Intro
+
 Hallo lieber Kursteilnehmer!,
 
 Schön, dass du dich entschlossen hast, in unseren Kursen, etwas über Data Science mit Python zu lernen. Damit du eine optimale Kurserfahrung genießen kannst, sollten allerdings ein paar Grundvoraussetzungen geschaffen werden. Hierfür dient dieses Repository, um das Wissen entsprechend mit dir zu teilen. Zunächst ist es wichtig zu wissen, wie mit diesem Repository umzugehen ist:    
