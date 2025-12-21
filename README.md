@@ -8,6 +8,9 @@ Ihr findet nun die Quizzes zu beiden Kursen (Python und Data Science) im Repo un
 
 Sendet uns eure Lösungen bitte bis zum 16. Januar 2026 23:59 Uhr an dscourses@eflab.de mit dem Betreﬀ „Lösungen zum Python-Quiz“ bzw. „Lösungen zum Data-Science-Quiz“. Das Abschicken eurer Lösung ist Voraussetzung für den Erhalt eines Zertifikats für die Teilnahme am jeweiligen Kurs. 
 
+#### **** Wichtig: ****
+**Bitte sendet uns eure Lösungsfiles (.py oder .ipynb) entweder eingepackt als zip-File oder ändert die Dateiendung von ".py"/".ipynb" zu ".txt". Der Erhalt von py/ipynb-Files wird in der Regel von unserem Mailserver geblockt.**
+
 ## Evaluation Data Science Kurse 2025
 
 Wir würden Euch bittem euch 5-10 Minuten Zeit zu nehmen und die Kurse an denen Ihr teilgenommen habt (Python-Kurs und/oder Data Science Kurs) zu evaluieren. Dies hilft uns unsere Art und Weise zu unterrichten kritisch zu hinterfragen und trägt außerdem zur Fortführung der Kurse bei.
