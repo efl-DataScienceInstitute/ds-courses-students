@@ -1,34 +1,40 @@
-# code for control structures slides
+"""Solutions for the slides "Control Structures in Python".
 
+Each cell (# %%) is labelled with the number of the slide it belongs to.
+Run the cells one at a time, e.g. in VS Code, Spyder or PyCharm.
+"""
 
 # %%
-#6
+# Slide 6
 # Define list of numbers from 1 to 10
-LNumbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Alternative
-LNumbers = list(range(1,11))
+numbers = list(range(1, 11))
 
 
 # %%
-#10
-iNumber = 5
+# Slide 10
+number = 5
 
-if iNumber < 10:
+if number < 10:
     print('Number is less than 10')
 
 
 # %%
-#11
-iNumber = 15
-if iNumber < 10:
+# Slide 11
+number = 15
+
+if number < 10:
     print('Number is less than 10')
 else:
-    print('Number is greater or equal to 10')
+    print('Number is greater than or equal to 10')
 
-#%%
-#12
+
+# %%
+# Slide 12
 age = 19
+
 if age < 18:
     print('Person is younger than 18')
 elif age == 18:
@@ -37,161 +43,159 @@ else:
     print('Person is older than 18')
 
 
-
 # %%
-#13
-iNumber = 5
-if (iNumber + 5) < 10:
-    print('Number plus 5 is smaller than 10')
+# Slide 13
+number = 5
 
-if not (iNumber + 5) < 10:
-    print('Number plus 5 is larger than 10')
+if number + 5 < 10:
+    print('Number plus 5 is less than 10')
 
-if iNumber > 3 and iNumber < 10:
-    print('Number is larger than 3 and smaller than 10')
+if not number + 5 < 10:
+    print('Number plus 5 is 10 or more')
 
-
-# %%
-#14
-LNumbers = [1,2,3,4,5,6,7,8,9,10]
-iNum = LNumbers[2]
-
-if iNum % 2 == 0:
-    print(iNum)
+if number > 3 and number < 10:
+    print('Number is greater than 3 and less than 10')
 
 
 # %%
-#15
-    
-#Exercise 1
+# Slide 14
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+num = numbers[1]
 
-#prints minimum of both numbers
-iNum1 = 8
-iNum2 = 5
+if num % 2 == 0:
+    print(num)
 
-if iNum1 <= iNum2:
-	print(iNum1)
+
+# %%
+# Slide 15
+# Exercise 1
+
+# 1.1 Print the minimum of both numbers
+num1 = 8
+num2 = 5
+
+if num1 <= num2:
+    print(num1)
 else:
-	print(iNum2)
-	
-#prints grade based on received points
-iPoints = 77
+    print(num2)
 
-if iPoints >= 90:
-	print('Grade 1')
-elif iPoints >= 75:
-	print('Grade 2')
-elif iPoints >= 60:
-	print('Grade 3')
-elif iPoints >= 50:
-	print('Grade 4')
+# 1.2 Print the grade based on the points received
+points = 77
+
+if points >= 90:
+    print('Grade 1')
+elif points >= 75:
+    print('Grade 2')
+elif points >= 60:
+    print('Grade 3')
+elif points >= 50:
+    print('Grade 4')
 else:
-	print('Grade 5')
-
-
-#%%
-#16
-#Exercise 2
-
-(1+2) == 3
-
-True != False
-
-iNum = 4
-(iNum != 0) and (20/iNum > 0) 
-
-
-iHour = 12
-(iHour < 9) or (iHour > 18) 
+    print('Grade 5')
 
 
 # %%
-#20
+# Slide 16
+# Exercise 2
+print((1 + 2) == 3)                       # True
+
+print(True != False)                      # True
+
+num = 4
+print((num != 0) and (20 / num > 0))      # True
+
+hour = 12
+print((hour < 9) or (hour > 18))          # False
+
+
+# %%
+# Slide 20
 count = 0
-while (count < 3):
+
+while count < 3:
     count = count + 1
-    print("Hello!") 
+    print('Hello!')
 
 
 # %%
-#21
-LNumbers = [1,2,3,4,5,6,7,8,9,10]
+# Slide 21
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for iNum in LNumbers:
-    print(iNum)
-    
+for num in numbers:
+    print(num)
+
 
 # %%
-#22
-for i in list(range(1, 10, 2)):
+# Slide 22
+# Iterate over a range
+for i in range(1, 10, 2):
     print(i)
- 
+
 # Iterating by index of sequences
-LWords = ['Iterating', 'by', 'index', 'of', 'sequences']
+words = ['Iterating', 'by', 'index', 'of', 'sequences']
 
-for i in range(len(LWords)):
-    print(LWords[i])
-    
-	
-for element in LWords:
-    print(element)
+for i in range(len(words)):
+    print(words[i])
+
+# Simpler: iterate directly over the elements
+for word in words:
+    print(word)
 
 
 # %%
-#23
-for letter in 'science':  
-    if letter == 'e' or letter == 'c': 
-         continue
+# Slide 23
+for letter in 'science':
+    if letter == 'e' or letter == 'c':
+        continue
     print('Current Letter:', letter)
 
 
-for letter in 'science':  
-    if letter == 'e' or letter == 'c': 
-         break
+for letter in 'science':
+    if letter == 'e' or letter == 'c':
+        break
     print('Current Letter:', letter)
 
 
-for letter in 'science': 
+for letter in 'science':
     pass
-print('Last Letter :', letter)
-    
+print('Last Letter:', letter)
+
 
 # %%
-#25
+# Slide 25
 # Define list of numbers from 1 to 10
-LNumbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Iterate over list
-for iNum in LNumbers:
-    # Check remainder of iNum
-    if iNum % 2 == 0:
-        # Print iNum if even
-        print(iNum)  
-      
-    
+for num in numbers:
+    # Check remainder of num
+    if num % 2 == 0:
+        # Print num if even
+        print(num)
+
+
 # %%
-#26
-    
-#Exercise 3  
-LNumbers = [5,23,37,49,50,46,30,46,70]
+# Slide 26
+# Exercise 3
+numbers = [5, 23, 37, 49, 50, 46, 30, 46, 70]
 
 # 1. while loop
-iCount = 0
-iSizeofList = len(LNumbers)
+count = 0
+list_size = len(numbers)
 i = 0
 
-while i < iSizeofList:
-	if LNumbers[i] > 30:
-		iCount = iCount + 1
-	i = i + 1
+while i < list_size:
+    if numbers[i] > 30:
+        count = count + 1
+    i = i + 1
 
-print(iCount)
+print(count)
 
 # 2. for loop
-iCount = 0
+count = 0
 
-for n in LNumbers:
-	if n > 30:
-		iCount = iCount + 1
-		
-print(iCount)
+for num in numbers:
+    if num > 30:
+        count = count + 1
+
+print(count)

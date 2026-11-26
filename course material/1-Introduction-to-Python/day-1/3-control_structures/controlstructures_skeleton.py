@@ -1,198 +1,201 @@
-# code for control structures slides
+"""Code skeleton for the slides "Control Structures in Python".
 
+Each cell (# %%) is labelled with the number of the slide it belongs to.
+Replace every ___ with your own code, then run the cell.
+"""
 
 # %%
-#6
+# Slide 6
 # Define list of numbers from 1 to 10
-LNumbers = 
+numbers = ___
 
 # Alternative
-LNumbers = 
+numbers = ___
 
 
 # %%
-#10
-iNumber = 5
+# Slide 10
+number = 5
 
-if :
+if ___:
     print('Number is less than 10')
 
 
 # %%
-#11
-iNumber = 5
-if :
+# Slide 11
+number = 15
+
+if ___:
     print('Number is less than 10')
 else:
-    print('Number is greater or equal to 10')
+    print('Number is greater than or equal to 10')
 
 
-#%%
-#12
+# %%
+# Slide 12
 age = 19
-if :
+
+if ___:
     print('Person is younger than 18')
-elif :
+elif ___:
     print('Person is 18')
 else:
     print('Person is older than 18')
 
 
 # %%
-#13
-iNumber = 5
-if :
-    print('Number plus 5 is smaller than 10')
+# Slide 13
+number = 5
 
-if not :
-    print('Number plus 5 is larger than 10')
+if ___:
+    print('Number plus 5 is less than 10')
 
-if  and :
-    print('Number is larger than 3 and smaller than 10')
+if not ___:
+    print('Number plus 5 is 10 or more')
 
-
-# %%
-#14
-LNumbers = [1,2,3,4,5,6,7,8,9,10]
-iNum = LNumbers[2]
-
-if :
-    print(iNum)
+if ___ and ___:
+    print('Number is greater than 3 and less than 10')
 
 
 # %%
-#15
-    
-#Exercise 1
+# Slide 14
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+num = numbers[1]
 
-#prints minimum of both numbers
-iNum1 = 8
-iNum2 = 5
+if ___:
+    print(num)
 
-if :
-	print(iNum1)
+
+# %%
+# Slide 15
+# Exercise 1
+
+# 1.1 Print the minimum of both numbers
+num1 = 8
+num2 = 5
+
+if ___:
+    print(num1)
 else:
-	print(iNum2)
-	
-#prints grade based on received points
-iPoints = 77
+    print(num2)
 
-if :
-	print('Grade 1')
-elif :
-	print('Grade 2')
-elif :
-	print('Grade 3')
-elif :
-	print('Grade 4')
+# 1.2 Print the grade based on the points received
+points = 77
+
+if ___:
+    print('Grade 1')
+elif ___:
+    print('Grade 2')
+elif ___:
+    print('Grade 3')
+elif ___:
+    print('Grade 4')
 else:
-	print('Grade 5')
-
-
-#%%
-#16
-#Exercise 2
-
-(1+2) == 3
-
-True != False
-
-iNum = 4
-(iNum != 0) and (20/iNum > 0) 
-
-
-iHour = 12
-(iHour < 9) or (iHour > 18) 
+    print('Grade 5')
 
 
 # %%
-#20
+# Slide 16
+# Exercise 2: first write down your answer, then run the cell to check it
+print((1 + 2) == 3)
+
+print(True != False)
+
+num = 4
+print((num != 0) and (20 / num > 0))
+
+hour = 12
+print((hour < 9) or (hour > 18))
+
+
+# %%
+# Slide 20
 count = 0
-while :
-    count = 
-    print("Hello!") 
+
+while ___:
+    count = ___
+    print('Hello!')
 
 
 # %%
-#21
-LNumbers = [1,2,3,4,5,6,7,8,9,10]
+# Slide 21
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for  in :
-    print(iNum)
+for ___ in ___:
+    print(num)
 
-    
+
 # %%
-#22
-for  in range(, , ):
+# Slide 22
+# Iterate over a range
+for i in range(___, ___, ___):
     print(i)
 
 # Iterating by index of sequences
-LWords = ['Iterating', 'by', 'index', 'of', 'sequences']
+words = ['Iterating', 'by', 'index', 'of', 'sequences']
 
-for i in :
-    print(LWords[i])
-    
-	
-for element in LWords:
-    print(element)
+for i in ___:
+    print(words[i])
+
+# Simpler: iterate directly over the elements
+for word in words:
+    print(word)
 
 
 # %%
-#23
-for letter in 'science':  
-    if: 
-         continue
+# Slide 23
+for letter in 'science':
+    if ___:
+        continue
     print('Current Letter:', letter)
 
 
-for letter in 'science':  
-    if: 
-         break
+for letter in 'science':
+    if ___:
+        break
     print('Current Letter:', letter)
 
 
-for letter in 'science': 
+for letter in 'science':
     pass
-print('Last Letter :', letter)
-   
+print('Last Letter:', letter)
+
 
 # %%
-#25
+# Slide 25
 # Define list of numbers from 1 to 10
-LNumbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 # Iterate over list
-for  in :
-    # Check remainder of iNum
-    if :
-        # Print iNum if even
-        print(iNum)
-     
-    
+for ___ in ___:
+    # Check remainder of num
+    if ___:
+        # Print num if even
+        print(num)
+
+
 # %%
-#26
-    
-#Exercise 3   
-LNumbers = [5,23,37,49,50,46,30,46,70]
+# Slide 26
+# Exercise 3
+numbers = [5, 23, 37, 49, 50, 46, 30, 46, 70]
 
 # 1. while loop
-iCount = 
-iSizeofList = 
-i = 
+count = ___
+list_size = ___
+i = ___
 
-while :
-	if  > 30:
-		iCount = 
-	i = 
+while ___:
+    if ___ > 30:
+        count = ___
+    i = ___
 
-print(iCount)
+print(count)
 
 # 2. for loop
-iCount = 0
+count = 0
 
-for  in :
-	if :
-		iCount =
-		
-print(iCount)
-    
+for ___ in ___:
+    if ___:
+        count = ___
+
+print(count)
