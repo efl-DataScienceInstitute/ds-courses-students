@@ -18,7 +18,7 @@ print('Hello World')
 # using print allows us to get an output in the console
 
 #%% Let's create a variable. We use variables for storing values. 
-# We use Camel Case as our naming convention. This ensures that variables are
+# We use pep8 as our naming convention. This ensures that variables are
 # easy to understand.
 
 name = 
